@@ -649,6 +649,8 @@ header {
 
 .popular-things-to-do-card .img {
   position: relative;
+      /* aspect-ratio: 3 / 5; */
+
 }
 
 .popular-things-to-do-card .img::after {
@@ -1323,6 +1325,11 @@ header {
       "box-3 box-4"
       "box-5 box-6";
   }
+.popular-things-to-do-card .img {
+  /* position: relative; */
+      aspect-ratio: 3 / 5;
+
+}
 
 }
 
@@ -1335,4 +1342,13 @@ header {
       .popular-things-to-do-cards {
         /* grid-auto-rows: minmax(50px, auto); */
     }
+}
+
+@media (max-width:375px) {
+  .popular-things-to-do-card .img {
+  /* position: relative; */
+      aspect-ratio: 3 / 6;
+
+}
+
 }
