@@ -163,8 +163,7 @@ header {
   /* 3rem to 10px 1200 to 768 px */
   gap: clamp(0.625rem, -3.5972rem + 8.7963vw, 3rem);
   /* .7rem to 10px and 1.5rem to 15px 1200 to 768 px */
-  padding: clamp(0.625rem, 0.4917rem + 0.2778vw, 0.7rem)
-    clamp(0.9375rem, -0.0625rem + 2.0833vw, 1.5rem);
+  padding: clamp(0.625rem, 0.4917rem + 0.2778vw, 0.7rem) clamp(0.9375rem, -0.0625rem + 2.0833vw, 1.5rem);
   border-radius: 14px;
 }
 
@@ -208,8 +207,7 @@ header {
   background-color: #eb662b;
   color: #fff;
   /*1.2rem to 10 px 1200 to 768 px and // 3rem to 10 px 1200 to 768 px */
-  padding: clamp(0.625rem, -0.3972rem + 2.1296vw, 1.2rem)
-    clamp(0.625rem, -3.5972rem + 8.7963vw, 3rem);
+  padding: clamp(0.625rem, -0.3972rem + 2.1296vw, 1.2rem) clamp(0.625rem, -3.5972rem + 8.7963vw, 3rem);
 
   font-size: var(--font-size-body);
   border-radius: 14px;
@@ -527,12 +525,14 @@ header {
 .popular_tour_cards_text {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 
 .popular_tour_cards_text_price {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, 0.218);
+  padding-bottom: 0;
 }
 
 .favourite-destinations {
@@ -623,7 +623,7 @@ header {
 .popular-things-to-do-cards {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 3rem;
   grid-template-rows: repeat(2, minmax(clamp(14rem, 2.3333rem + 15.5556vw, 21rem), auto));
   grid-auto-rows: minmax(100px, auto);
@@ -649,7 +649,7 @@ header {
 
 .popular-things-to-do-card .img {
   position: relative;
-      /* aspect-ratio: 3 / 5; */
+  /* aspect-ratio: 3 / 5; */
 
 }
 
@@ -657,11 +657,9 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.854) 20%,
-    rgba(78, 83, 78, 0.123) 50%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.854) 20%,
+      rgba(78, 83, 78, 0.123) 50%);
   border-radius: 1rem;
   z-index: 1;
 }
@@ -693,7 +691,9 @@ header {
 
 .top_trending_bg_img {
   width: 100%;
-  height: 45rem;
+
+  /* height 45rem to 33rem 1920 to 320 px */
+  height: clamp(33rem, 30.6rem + 12vw, 45rem);
   object-fit: cover;
 }
 
@@ -914,25 +914,27 @@ header {
   margin-top: clamp(0.5rem, -1rem + 3.125vw, 1rem);
 }
 
-.footer-column h3 {
+.mobile-apps .footer-column h3 {
   font-size: var(--font-size-h4);
 }
 
-.footer-column li {
+.mobile-apps li ,.footer-column li {
   /* 1rem to 0.5rem 1024 to 768 px */
   margin-top: clamp(0.5rem, -1rem + 3.125vw, 1rem);
   /* text-decoration: none; */
   list-style: none;
 }
 
+.mobile-apps li a,
 .footer-column li a {
   text-decoration: none;
   color: inherit;
+  /* list-style: none; */
 }
 
 .footer_links {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.5fr .7fr .7fr .7fr 1.5fr;
   gap: 13px;
   padding-top: 2rem;
 }
@@ -972,6 +974,7 @@ header {
   /* transition: opacity 0.2s; */
 }
 
+
 .footer_visa {
   display: flex;
   justify-content: space-between;
@@ -1008,7 +1011,6 @@ header {
 
   .trending-destinations {
     margin: 0 clamp(1rem, -11rem + 25vw, 5rem);
-    /* padding-top: 7rem; */
   }
 
   .popular-tours-content {
@@ -1124,11 +1126,9 @@ header {
   .hero_banner_content {
     position: absolute;
     /* backdrop-filter: blur(2px); */
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.316),
-      rgba(0, 0, 0, 0.078)
-    );
+    background: linear-gradient(to right,
+        rgba(0, 0, 0, 0.316),
+        rgba(0, 0, 0, 0.078));
     /* border: 1px solid; */
     padding: 0rem;
     transform: translate(-50%, -50%);
@@ -1144,12 +1144,13 @@ header {
   .hero_banner-search {
     position: static;
     bottom: 0;
+    /*  width 22rem to 17rem 768 to 320px */
+    width: clamp(17rem, 13.4286rem + 17.8571vw, 22rem);
     display: flex;
     background-color: rgba(255, 255, 255, 0.638);
     color: #000;
     gap: clamp(0.625rem, -3.5972rem + 8.7963vw, 3rem);
-    padding: clamp(0.625rem, 0.4917rem + 0.2778vw, 0.7rem)
-      clamp(0.9375rem, -0.0625rem + 2.0833vw, 1.5rem);
+    padding: clamp(0.625rem, 0.4917rem + 0.2778vw, 0.7rem) clamp(0.9375rem, -0.0625rem + 2.0833vw, 1.5rem);
     border-radius: 14px;
     flex-direction: column;
   }
@@ -1187,6 +1188,7 @@ header {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    /* height: 100%; */
   }
 
   .favourite-destinations-banner-content {
@@ -1206,13 +1208,18 @@ header {
     position: static;
     top: 0;
     right: 0;
-    height: 100%;
+    /* height: 100%;  */
     width: 100%;
+    aspect-ratio: 11 / 10;
+    /* aspect-ratio: 8 / 10; */
   }
 
   .favourite-destinations-banner-content {
     position: absolute;
     top: 77%;
+    /* top 48rem to 26rem 768 to 320px */
+    /* top: clamp(26rem, 10.2857rem + 78.5714vw, 48rem); */
+    /* top: calc(10.2857rem + 78.5714vw); */
     margin: 0 clamp(1rem, -3rem + 8.3333vw, 7rem);
     transform: translateY(-50%);
     color: #000000;
@@ -1271,13 +1278,40 @@ header {
       "box-5 box-6";
   }
 
-  .footer_visa {
+  .footer_visa {}
+
+  .heroBanner img {
+    filter: blur(3px);
   }
+
+  .feature-icon {
+    width: 16%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .newsletter{
+    grid-column: 1 / 3;
+  }
+
 }
 
 @media (max-width: 625px) {
   .popular-tours-cards {
     grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    justify-items: center;
+
+
+  }
+
+  .popular_tour_card {
+    max-width: 22rem;
   }
 
   .newsletter-form {
@@ -1306,18 +1340,21 @@ header {
     /* width: clamp(23rem, 21.6667rem + 11.1111vw, 35rem); */
     /* text-align: center; */
   }
+
   .hero {
-    aspect-ratio: 9 / 10.9;
+    aspect-ratio: 9 / 13;
     background-color: white;
   }
+
   .header {
     max-height: 4rem;
   }
-    .popular-things-to-do-cards {
+
+  .popular-things-to-do-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 1rem;
     grid-template-rows: repeat(3, minmax(clamp(14rem, 2.3333rem + 15.5556vw, 21rem), auto));
     grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
@@ -1325,30 +1362,100 @@ header {
       "box-3 box-4"
       "box-5 box-6";
   }
-.popular-things-to-do-card .img {
-  /* position: relative; */
-      aspect-ratio: 3 / 5;
 
+  .popular-things-to-do-card .img {
+    /* position: relative; */
+    aspect-ratio: 3 / 5;
+
+  }
+
+
+  /* http://192.168.1.18:5500/index.html */
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .feature-card p {
+    max-width: 100%;
+  }
+
+  .favourite-destinations-banner-content-image {
+    /* width: 50%;
+  position: static;
+  top: 0;
+  right: 0;
+  /* height: 100%;  */
+    aspect-ratio: 8 / 10;
+  }
+
+  .trending-destinations {
+    margin: 0;
+  }
+
+  .trending-destinations h2 {
+    margin-left: 1rem;
+  }
+
+  .trending-destinations-pagination {
+    /* display: none; */
+  }
+
+  .review-card {
+    padding: 0rem 2rem;
+  }
+
+  .customer_reviews-content {
+    margin: 0;
+
+
+  }
+
+  .footer_links {
+    row-gap: 15px;
 }
+
+  /* .footer_content {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+      "grid1 grid2"
+      "grid3 grid4"
+      "grid5 grid5";
+} */
+
+   /* .footer_content {
+grid-template-areas:
+      "grid-1 grid-2"
+      "grid-3 grid-4"
+      "grid-5 grid-5";
+  }  */
+
+    /* .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 3; } */ 
 
 }
 
 @media (max-width: 435px) {
+
   .tt_next_button,
   .tt_prev_button {
     display: none !important;
   }
 
-      .popular-things-to-do-cards {
-        /* grid-auto-rows: minmax(50px, auto); */
-    }
+  .popular-things-to-do-cards {
+    /* grid-auto-rows: minmax(50px, auto); */
+  }
 }
 
 @media (max-width:375px) {
   .popular-things-to-do-card .img {
-  /* position: relative; */
-      aspect-ratio: 3 / 6;
+    /* position: relative; */
+    aspect-ratio: 3 / 6;
 
-}
+  }
 
 }

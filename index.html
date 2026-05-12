@@ -1,1164 +1,982 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel</title>
-    <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <section class="hero">
-      <header class="header">
-        <div class="logo">
-          <img src="img/logo.png" alt="logo" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <section class="hero">
+    <header class="header">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" />
+      </div>
+      <div class="overlay"></div>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Activities</a></li>
+          <li><a href="#">INR</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a class="login-btn" href="#">Login</a></li>
+        </ul>
+      </nav>
+
+      <div onclick="toggleMenu()" class="hamburger-menu">=</div>
+
+      <script>
+        function toggleMenu() {
+          const menu = document.querySelector(".nav-links");
+          // const overlay = document.querySelector('.overlay');
+          menu.classList.toggle("active");
+          // overlay.classList.toggle('active');
+        }
+      </script>
+    </header>
+    <div class="hero-content">
+      <div class="heroBanner">
+        <img src="img/Section.png" alt="heroBanner" />
+      </div>
+
+      <div class="hero_banner_content">
+        <div class="hero_banner_text">
+          <h1>Your world of joy</h1>
+          <p>
+            From local escapes to far-flung adventures, find what makes you
+            happy anytime, anywhere
+          </p>
         </div>
-        <div class="overlay"></div>
+        <div class="hero_banner-search">
+          <!-- <div class="search-container"> -->
 
-        <nav class="nav-links">
-          <ul>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Activities</a></li>
-            <li><a href="#">INR</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a class="login-btn" href="#">Login</a></li>
-          </ul>
-        </nav>
+          <div class="search-box">
+            <div class="icon-box"></div>
 
-        <div onclick="toggleMenu()" class="hamburger-menu">=</div>
-
-        <script>
-          function toggleMenu() {
-            const menu = document.querySelector(".nav-links");
-            // const overlay = document.querySelector('.overlay');
-            menu.classList.toggle("active");
-            // overlay.classList.toggle('active');
-          }
-        </script>
-      </header>
-      <div class="hero-content">
-        <div class="heroBanner">
-          <img src="img/Section.png" alt="heroBanner" />
-        </div>
-
-        <div class="hero_banner_content">
-          <div class="hero_banner_text">
-            <h1>Your world of joy</h1>
-            <p>
-              From local escapes to far-flung adventures, find what makes you
-              happy anytime, anywhere
-            </p>
+            <div class="search-content">
+              <h3>Where</h3>
+              <p>Search destinations</p>
+            </div>
           </div>
-          <div class="hero_banner-search">
-            <!-- <div class="search-container"> -->
 
-            <div class="search-box">
-              <div class="icon-box"></div>
+          <div class="search-box">
+            <div class="icon-box"></div>
 
-              <div class="search-content">
-                <h3>Where</h3>
-                <p>Search destinations</p>
-              </div>
+            <div class="search-content">
+              <h3>When</h3>
+              <p>February 05 ~ March 14</p>
             </div>
+          </div>
 
-            <div class="search-box">
-              <div class="icon-box"></div>
+          <div class="search-box">
+            <div class="icon-box"></div>
 
-              <div class="search-content">
-                <h3>When</h3>
-                <p>February 05 ~ March 14</p>
-              </div>
+            <div class="search-content">
+              <h3>Tour Type</h3>
+              <p>All tour</p>
             </div>
+          </div>
 
-            <div class="search-box">
-              <div class="icon-box"></div>
+          <button class="search-btn">Search</button>
 
-              <div class="search-content">
-                <h3>Tour Type</h3>
-                <p>All tour</p>
-              </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <div class="why-choose-us-content">
+      <h2>Why choose Tourz</h2>
+
+      <div class="why-choose-us-cards">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="img/ticket.svg" alt="ticket icon" />
+          </div>
+
+          <h3>Ultimate flexibility</h3>
+
+          <p>
+            You're in control, with free cancellation and payment options to
+            satisfy any plan or budget.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="img/hot-air-balloon.svg fill.svg" alt="bulb icon" />
+          </div>
+
+          <h3>Memorable experiences</h3>
+
+          <p>
+            Browse and book tours and activities so incredible, you'll want to
+            tell your friends.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="img/diamond.svg.svg" alt="diamond icon" />
+          </div>
+
+          <h3>Quality at our core</h3>
+
+          <p>High-quality standards. Millions of reviews. A tourz company.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="img/medal.svg fill.svg" alt="award icon" />
+          </div>
+
+          <h3>Award-winning support</h3>
+
+          <p>New price? New plan? No problem. We're here to help, 24/7.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trending-destinations">
+      <h2>Trending Destinations</h2>
+      <div class="swiper mySwiper swiper_trending_destinations">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
             </div>
+          </div>
 
-            <button class="search-btn">Search</button>
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
 
-            <!-- </div> -->
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="destination-card">
+              <img src="img/paris.png" alt="destination 1" />
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination trending-destinations-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-tours">
+    <div class="popular-tours-content">
+      <h2>Find Popular Tours</h2>
+
+      <div class="popular-tours-cards">
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
+          </div>
+        </div>
+
+        <div class="popular_tour_card">
+          <div class="popular_tour_cards_image">
+            <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+          </div>
+          <div class="popular_tour_cards_text">
+            <p>Paris, France</p>
+            <p>4.8 (243)</p>
+          </div>
+          <div class="popular_tour_cards_text_title">
+            <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
+          </div>
+
+          <div class="popular_tour_cards_text_price">
+            <p>4 Days</p>
+            <p>From 10,000 INR</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="why-choose-us">
-      <div class="why-choose-us-content">
-        <h2>Why choose Tourz</h2>
-
-        <div class="why-choose-us-cards">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <img src="img/ticket.svg" alt="ticket icon" />
-            </div>
-
-            <h3>Ultimate flexibility</h3>
-
-            <p>
-              You're in control, with free cancellation and payment options to
-              satisfy any plan or budget.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <img src="img/hot-air-balloon.svg fill.svg" alt="bulb icon" />
-            </div>
-
-            <h3>Memorable experiences</h3>
-
-            <p>
-              Browse and book tours and activities so incredible, you'll want to
-              tell your friends.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <img src="img/diamond.svg.svg" alt="diamond icon" />
-            </div>
-
-            <h3>Quality at our core</h3>
-
-            <p>High-quality standards. Millions of reviews. A tourz company.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">
-              <img src="img/medal.svg fill.svg" alt="award icon" />
-            </div>
-
-            <h3>Award-winning support</h3>
-
-            <p>New price? New plan? No problem. We're here to help, 24/7.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="trending-destinations">
-        <h2>Trending Destinations</h2>
-        <div class="swiper mySwiper swiper_trending_destinations">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="destination-card">
-                <img src="img/paris.png" alt="destination 1" />
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="popular-tours">
-      <div class="popular-tours-content">
-        <h2>Find Popular Tours</h2>
-
-        <div class="popular-tours-cards">
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-
-          <div class="popular_tour_card">
-            <div class="popular_tour_cards_image">
-              <img
-                class="popular_tour_cards_image_img"
-                src="img/image.png"
-                alt="destination 1"
-              />
-            </div>
-            <div class="popular_tour_cards_text">
-              <p>Paris, France</p>
-              <p>4.8 (243)</p>
-            </div>
-            <div class="popular_tour_cards_text_title">
-              <p>Centipede Tour - Guided Arizona Desert Tour by ATV</p>
-            </div>
-
-            <div class="popular_tour_cards_text_price">
-              <p>4 Days</p>
-              <p>From 10,000 INR</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="favourite-destinations">
-      <!-- <h2>Favourite Destinations</h2> -->
-      <div class="favourite-destinations-banner">
-        <!-- <picture> -->
-        <!-- <source media="(max-width: 768px)" srcset="img/sec4bg-mobile.png">
+  <section class="favourite-destinations">
+    <!-- <h2>Favourite Destinations</h2> -->
+    <div class="favourite-destinations-banner">
+      <!-- <picture> -->
+      <!-- <source media="(max-width: 768px)" srcset="img/sec4bg-mobile.png">
           <source media="(max-width: 1024px)" srcset="img/sec4bg-tablet.png"> -->
-        <!-- <img class="favourite-destinations-banner-img" src="img/sec4bg.png" alt="favourite-destinations-banner" /> -->
-        <!-- </picture> -->
-        <div class="favourite-destinations-banner-img">
-          <img src="img/sec4bg.png" alt="favourite-destinations-banner" />
-        </div>
+      <!-- <img class="favourite-destinations-banner-img" src="img/sec4bg.png" alt="favourite-destinations-banner" /> -->
+      <!-- </picture> -->
+      <div class="favourite-destinations-banner-img">
+        <img src="img/sec4bg.png" alt="favourite-destinations-banner" />
+      </div>
 
-        <div class="favourite-destinations-banner-content">
-          <h2>Grab up to <span style="color: #eb662b">35% off</span></h2>
-          <h2>on your favorite</h2>
-          <h2>Destination</h2>
-          <p style="">Limited time offer, don't miss the opportunity.</p>
-          <button style="margin-top: 1.5rem" class="search-btn">
-            Book Now
-          </button>
-        </div>
-        <div class="favourite-destinations-banner-content-image">
-          <img
-            class="favourite-destinations-banner-content-image-img"
-            src="img/sec4img.png"
-            alt="favourite-destinations-banner"
-          />
+      <div class="favourite-destinations-banner-content">
+        <h2>Grab up to <span style="color: #eb662b">35% off</span></h2>
+        <h2>on your favorite</h2>
+        <h2>Destination</h2>
+        <p style="">Limited time offer, don't miss the opportunity.</p>
+        <button style="margin-top: 1.5rem" class="search-btn">
+          Book Now
+        </button>
+      </div>
+      <div class="favourite-destinations-banner-content-image">
+        <img class="favourite-destinations-banner-content-image-img" src="img/sec4img.png"
+          alt="favourite-destinations-banner" />
 
-          <div class="favourite-destinations-banner-content-image-shape">
-            <img
-              class="favourite-destinations-banner-content-image-shape-img"
-              src="img/shape.svg.svg"
-              alt="favourite-destinations-banner"
-            />
-          </div>
+        <div class="favourite-destinations-banner-content-image-shape">
+          <img class="favourite-destinations-banner-content-image-shape-img" src="img/shape.svg.svg"
+            alt="favourite-destinations-banner" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="popular-things-to-do-main-container">
-      <div class="popular-things-to-do-content">
-        <h2>Popular Things to Do</h2>
-        <div class="popular-things-to-do-cards">
-          <div style="grid-area: box-1" class="popular-things-to-do-card one">
-            <div class="img">
-              <img src="img/cruise.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+  <section class="popular-things-to-do-main-container">
+    <div class="popular-things-to-do-content">
+      <h2>Popular Things to Do</h2>
+      <div class="popular-things-to-do-cards">
+        <div style="grid-area: box-1" class="popular-things-to-do-card one">
+          <div class="img">
+            <img src="img/cruise.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
-          <div style="grid-area: box-2" class="popular-things-to-do-card two">
-            <div class="img">
-              <img src="img/beach.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+        </div>
+        <div style="grid-area: box-2" class="popular-things-to-do-card two">
+          <div class="img">
+            <img src="img/beach.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
-          <div style="grid-area: box-3" class="popular-things-to-do-card three">
-            <div class="img">
-              <img src="img/city tour.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+        </div>
+        <div style="grid-area: box-3" class="popular-things-to-do-card three">
+          <div class="img">
+            <img src="img/city tour.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
-          <div style="grid-area: box-4" class="popular-things-to-do-card four">
-            <div class="img">
-              <img src="img/museum.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+        </div>
+        <div style="grid-area: box-4" class="popular-things-to-do-card four">
+          <div class="img">
+            <img src="img/museum.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
-          <div style="grid-area: box-5" class="popular-things-to-do-card five">
-            <div class="img">
-              <img src="img/food.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+        </div>
+        <div style="grid-area: box-5" class="popular-things-to-do-card five">
+          <div class="img">
+            <img src="img/food.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
-          <div style="grid-area: box-6" class="popular-things-to-do-card six">
-            <div class="img">
-              <img src="img/hiking.png" alt="destination 1" />
-              <div class="popular-things-to-do-card-text">
-                <p>Beach</p>
-              </div>
+        </div>
+        <div style="grid-area: box-6" class="popular-things-to-do-card six">
+          <div class="img">
+            <img src="img/hiking.png" alt="destination 1" />
+            <div class="popular-things-to-do-card-text">
+              <p>Beach</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- </div> -->
-    </section>
+    </div>
+    <!-- </div> -->
+  </section>
 
-    <section class="top_trending_main_container">
-      <div class="top_trending_bg_container">
-        <div class="top_trending_bg">
-          <img
-            class="top_trending_bg_img"
-            src="img/tt bg.png"
-            alt="top-trending-bg"
-          />
+  <section class="top_trending_main_container">
+    <div class="top_trending_bg_container">
+      <div class="top_trending_bg">
+        <img class="top_trending_bg_img" src="img/tt bg.png" alt="top-trending-bg" />
 
-          <div class="top_trending_bg_content">
-            <h2 class="tt_heading">Top Trending</h2>
-            <div class="slider-container">
-              <!-- Previous Button -->
-              <div class="swiper-button-prev custom-prev tt_prev_button"></div>
+        <div class="top_trending_bg_content">
+          <h2 class="tt_heading">Top Trending</h2>
+          <div class="slider-container">
+            <!-- Previous Button -->
+            <div class="swiper-button-prev custom-prev tt_prev_button"></div>
 
-              <!-- Swiper -->
-              <div class="swiper mySwiper toptrending_swiper">
-                <div class="swiper-wrapper toptrending_swiper_wrapper">
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper toptrending_swiper">
+              <div class="swiper-wrapper toptrending_swiper_wrapper">
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
+                </div>
 
-                  <div class="swiper-slide">
-                    <div class="popular_tour_card">
-                      <div class="popular_tour_cards_image">
-                        <img
-                          class="popular_tour_cards_image_img"
-                          src="img/image.png"
-                          alt="destination 1"
-                        />
-                      </div>
-                      <div class="popular_tour_cards_text">
-                        <p>Paris, France</p>
-                        <p>4.8 (243)</p>
-                      </div>
-                      <div class="popular_tour_cards_text_title">
-                        <p>
-                          Centipede Tour - Guided Arizona Desert Tour by ATV
-                        </p>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="popular_tour_card">
+                    <div class="popular_tour_cards_image">
+                      <img class="popular_tour_cards_image_img" src="img/image.png" alt="destination 1" />
+                    </div>
+                    <div class="popular_tour_cards_text">
+                      <p>Paris, France</p>
+                      <p>4.8 (243)</p>
+                    </div>
+                    <div class="popular_tour_cards_text_title">
+                      <p>
+                        Centipede Tour - Guided Arizona Desert Tour by ATV
+                      </p>
+                    </div>
 
-                      <div class="popular_tour_cards_text_price">
-                        <p>4 Days</p>
-                        <p>From 10,000 INR</p>
-                      </div>
+                    <div class="popular_tour_cards_text_price">
+                      <p>4 Days</p>
+                      <p>From 10,000 INR</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Next Button -->
-              <div class="swiper-button-next custom-next tt_next_button"></div>
             </div>
+
+            <!-- Next Button -->
+            <div class="swiper-button-next custom-next tt_next_button"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="customer_reviews-main_container">
-      <div class="customer_reviews-content">
-        <div class="section-header">
-          <h2>Customer Reviews</h2>
-        </div>
+  <section class="customer_reviews-main_container">
+    <div class="customer_reviews-content">
+      <div class="section-header">
+        <h2>Customer Reviews</h2>
+      </div>
 
-        <div class="swiper customer_reviews_swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="review-card">
-                <div class="review-card-header">
-                  <div class="review-avatar">
-                    <div class="quote-svg-container">
-                      <img
-                        class="review_svg"
-                        src="img/customer review comma.svg"
-                        alt=""
-                      />
-                    </div>
-                    <img src="img/customer review.png" alt="" />
+      <div class="swiper customer_reviews_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="review-card">
+              <div class="review-card-header">
+                <div class="review-avatar">
+                  <div class="quote-svg-container">
+                    <img class="review_svg" src="img/customer review comma.svg" alt="" />
                   </div>
+                  <img src="img/customer review.png" alt="" />
                 </div>
+              </div>
 
-                <h3 class="review-card-title">Excellent Service!</h3>
-                <p class="review-quote">
-                  I had an amazing experience with this company. The service was
-                  top-notch, and the staff was incredibly friendly. I highly
-                  recommend them!
-                </p>
-                <div class="review-author">
-                  <span class="review-name">John Smith</span>
-                  <span class="review-role">Traveler</span>
-                </div>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="review-card">
-                <div class="review-card-header">
-                  <div class="review-avatar">
-                    <div class="quote-svg-container">
-                      <img
-                        class="review_svg"
-                        src="img/customer review comma.svg"
-                        alt=""
-                      />
-                    </div>
-                    <img src="img/customer review.png" alt="" />
-                  </div>
-                </div>
-
-                <h3 class="review-card-title">Excellent Service!</h3>
-                <p class="review-quote">
-                  I had an amazing experience with this company. The service was
-                  top-notch, and the staff was incredibly friendly. I highly
-                  recommend them!
-                </p>
-                <div class="review-author">
-                  <span class="review-name">John Smith</span>
-                  <span class="review-role">Traveler</span>
-                </div>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="review-card">
-                <div class="review-card-header">
-                  <div class="review-avatar">
-                    <div class="quote-svg-container">
-                      <img
-                        class="review_svg"
-                        src="img/customer review comma.svg"
-                        alt=""
-                      />
-                    </div>
-                    <img src="img/customer review.png" alt="" />
-                  </div>
-                </div>
-
-                <h3 class="review-card-title">Excellent Service!</h3>
-                <p class="review-quote">
-                  I had an amazing experience with this company. The service was
-                  top-notch, and the staff was incredibly friendly. I highly
-                  recommend them!
-                </p>
-                <div class="review-author">
-                  <span class="review-name">John Smith</span>
-                  <span class="review-role">Traveler</span>
-                </div>
-              </article>
-            </div>
+              <h3 class="review-card-title">Excellent Service!</h3>
+              <p class="review-quote">
+                I had an amazing experience with this company. The service was
+                top-notch, and the staff was incredibly friendly. I highly
+                recommend them!
+              </p>
+              <div class="review-author">
+                <span class="review-name">John Smith</span>
+                <span class="review-role">Traveler</span>
+              </div>
+            </article>
           </div>
 
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <article class="review-card">
+              <div class="review-card-header">
+                <div class="review-avatar">
+                  <div class="quote-svg-container">
+                    <img class="review_svg" src="img/customer review comma.svg" alt="" />
+                  </div>
+                  <img src="img/customer review.png" alt="" />
+                </div>
+              </div>
+
+              <h3 class="review-card-title">Excellent Service!</h3>
+              <p class="review-quote">
+                I had an amazing experience with this company. The service was
+                top-notch, and the staff was incredibly friendly. I highly
+                recommend them!
+              </p>
+              <div class="review-author">
+                <span class="review-name">John Smith</span>
+                <span class="review-role">Traveler</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="review-card">
+              <div class="review-card-header">
+                <div class="review-avatar">
+                  <div class="quote-svg-container">
+                    <img class="review_svg" src="img/customer review comma.svg" alt="" />
+                  </div>
+                  <img src="img/customer review.png" alt="" />
+                </div>
+              </div>
+
+              <h3 class="review-card-title">Excellent Service!</h3>
+              <p class="review-quote">
+                I had an amazing experience with this company. The service was
+                top-notch, and the staff was incredibly friendly. I highly
+                recommend them!
+              </p>
+              <div class="review-author">
+                <span class="review-name">John Smith</span>
+                <span class="review-role">Traveler</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="emailer_main-container">
+    <div class="emailer_content_bg_container">
+      <div class="emailer_content_bg">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/emailer_bg_mob.png" />
+          <source media="(max-width: 1024px)" srcset="img/emailer bg-tablet.png" />
+          <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" />
+        </picture>
+        <!-- <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" /> -->
+
+        <div class="emailer-content">
+          <h2>Get 5% off your 1st<br />app booking</h2>
+
+          <p>
+            Booking's better on the app. Use promo code
+            <span>"TourBooking"</span> to save!
+          </p>
+
+          <h3>Get a magic link sent to your email</h3>
+
+          <form class="emailer-form">
+            <input type="email" placeholder="Email" />
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="emailer_main-container">
-      <div class="emailer_content_bg_container">
-        <div class="emailer_content_bg">
-          <picture>
-            <source
-              media="(max-width: 768px)"
-              srcset="img/emailer_bg_mob.png"
-            />
-            <source
-              media="(max-width: 1024px)"
-              srcset="img/emailer bg-tablet.png"
-            />
-            <img
-              class="emailer_content_bg-img"
-              src="img/emailer bg.png"
-              alt=""
-            />
-          </picture>
-          <!-- <img class="emailer_content_bg-img" src="img/emailer bg.png" alt="" /> -->
+  <footer class="footer_main_container">
+    <div class="footer_bg_main_container">
+      <!-- <img src="img/footer image.png" alt="" /> -->
+      <picture>
+        <source media="(max-width: 374px)" srcset="img/footer_bg_mobile_small.jpg" />
 
-          <div class="emailer-content">
-            <h2>Get 5% off your 1st<br />app booking</h2>
+        <source media="(max-width: 516px)" srcset="img/footer_bg_mobile_516.jpg" />
+        <source media="(max-width: 768px)" srcset="img/footer_bg_mobile.jpg" />
+        <source media="(max-width: 1200px)" srcset="img/footer_image_1200px.png" />
+        <source media="(max-width: 1500px)" srcset="img/footer_image_1500px.png" />
 
+        <img src="img/footer image.png" alt="Description of the image" />
+      </picture>
+      <div class="footer_content">
+        <div class="footer_helpline">
+          <h3>
+            Speak to our expert at
+            <span style="color: #eb662b">1-800-453-6744</span>
+          </h3>
+          <p>Follow Us</p>
+        </div>
+        <div class="footer_links">
+
+          <div style="" class="footer-column contact div1">
+            <h3>Contact</h3>
             <p>
-              Booking's better on the app. Use promo code
-              <span>"TourBooking"</span> to save!
+              328 Queensberry Street, North Melbourne VIC3051,<br />
+              Australia.
             </p>
+            <p>hi@viatours.com</p>
+          </div>
 
-            <h3>Get a magic link sent to your email</h3>
+          <!-- Company -->
+          <div style="" class="footer-column div2">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Tourz Reviews</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Travel Guides</a></li>
+              <li><a href="#">Data Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
 
-            <form class="emailer-form">
-              <input type="email" placeholder="Email" />
+
+          <!-- Support -->
+          <div style="" class="footer-column div3">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Get in Touch</a></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Live chat</a></li>
+              <li><a href="#">How it works</a></li>
+            </ul>
+          </div>
+
+
+          <div style="" class="mobile-apps div4">
+            <h3 class="mobile-title">Mobile Apps</h3>
+            <ul>
+              <li><a href="#">iOS App</a></li>
+              <li><a href="#">Android App</a></li>
+            </ul>
+          </div>
+          <!-- Newsletter -->
+
+          <div style="" class="footer-column newsletter div5">
+            <h3>Newsletter</h3>
+            <p>Subscribe to the free newsletter and stay up to date</p>
+
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
               <button type="submit">Send</button>
             </form>
+
           </div>
+
         </div>
       </div>
-    </section>
+    </div>
+    <div class="footer_visa">
+      <p>© Copyright Viatours 2024</p>
+      <img src="img/cards_visa.png" alt="" />
+    </div>
+  </footer>
 
-    <footer class="footer_main_container">
-      <div class="footer_bg_main_container">
-        <!-- <img src="img/footer image.png" alt="" /> -->
-        <picture>
-          <source
-            media="(max-width: 374px)"
-            srcset="img/footer_bg_mobile_small.jpg"
-          />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
-          <source
-            media="(max-width: 516px)"
-            srcset="img/footer_bg_mobile_516.jpg"
-          />
-          <source
-            media="(max-width: 768px)"
-            srcset="img/footer_bg_mobile.jpg"
-          />
-          <source
-            media="(max-width: 1200px)"
-            srcset="img/footer_image_1200px.png"
-          />
-          <source
-            media="(max-width: 1500px)"
-            srcset="img/footer_image_1500px.png"
-          />
-
-          <img src="img/footer image.png" alt="Description of the image" />
-        </picture>
-        <div class="footer_content">
-          <div class="footer_helpline">
-            <h3>
-              Speak to our expert at
-              <span style="color: #eb662b">1-800-453-6744</span>
-            </h3>
-            <p>Follow Us</p>
-          </div>
-          <div class="footer_links">
-            <div class="footer-column contact">
-              <h3>Contact</h3>
-              <p>
-                328 Queensberry Street, North Melbourne VIC3051,<br />
-                Australia.
-              </p>
-              <p>hi@viatours.com</p>
-            </div>
-
-            <!-- Company -->
-            <div class="footer-column">
-              <h3>Company</h3>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Tourz Reviews</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Travel Guides</a></li>
-                <li><a href="#">Data Policy</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Legal</a></li>
-                <li><a href="#">Sitemap</a></li>
-              </ul>
-            </div>
-
-            <!-- Support -->
-            <div class="footer-column">
-              <h3>Support</h3>
-              <ul>
-                <li><a href="#">Get in Touch</a></li>
-                <li><a href="#">Help center</a></li>
-                <li><a href="#">Live chat</a></li>
-                <li><a href="#">How it works</a></li>
-              </ul>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="footer-column newsletter">
-              <h3>Newsletter</h3>
-              <p>Subscribe to the free newsletter and stay up to date</p>
-
-              <form class="newsletter-form">
-                <input type="email" placeholder="Your email address" />
-                <button type="submit">Send</button>
-              </form>
-
-              <h3 class="mobile-title">Mobile Apps</h3>
-              <ul>
-                <li><a href="#">iOS App</a></li>
-                <li><a href="#">Android App</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer_visa">
-        <p>© Copyright Viatours 2024</p>
-        <img src="img/cards_visa.png" alt="" />
-      </div>
-    </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <script>
-      var trendingSwiper = new Swiper(".swiper_trending_destinations", {
-        slidesPerView: 8,
-        spaceBetween: 15,
-        pagination: {
-          el: ".swiper_trending_destinations .swiper-pagination",
-          clickable: true,
+  <script>
+    var trendingSwiper = new Swiper(".swiper_trending_destinations", {
+      slidesPerView: 8,
+      spaceBetween: 15,
+      pagination: {
+        el: ".swiper_trending_destinations .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 12,
         },
-        breakpoints: {
-          // when window width is >= 480px
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 12,
-          },
 
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 12,
-          },
-          // when window width is >= 768px (Tablet)
-          768: {
-            slidesPerView: 5,
-            spaceBetween: 15,
-          },
-          // when window width is >= 1200px (Desktop)
-          1340: {
-            slidesPerView: 8,
-            spaceBetween: 15,
-          },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 12,
         },
-      });
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 15,
+        },
+        1340: {
+          slidesPerView: 8,
+          spaceBetween: 15,
+        },
+      },
+    });
 
-      var topTrendingSwiper = new Swiper(".toptrending_swiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".toptrending_swiper .swiper-pagination",
-          clickable: true,
+    var topTrendingSwiper = new Swiper(".toptrending_swiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".toptrending_swiper .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 480px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 12,
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        // when window width is >= 768px (Tablet)
+        708: {
+          slidesPerView: 2,
+          spaceBetween: 15,
         },
-        breakpoints: {
-          // when window width is >= 480px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 12,
-          },
-          // when window width is >= 768px (Tablet)
-          708: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
 
-          868: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
-
-          // when window width is >= 1200px (Desktop)
-          1116: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          1400: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
+        868: {
+          slidesPerView: 2,
+          spaceBetween: 15,
         },
-      });
 
-      var customerReviewsSwiper = new Swiper(".customer_reviews_swiper", {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        centeredSlides: true,
-        // loop: true,
-        pagination: {
-          el: ".customer_reviews_swiper .swiper-pagination",
-          clickable: true,
+        // when window width is >= 1200px (Desktop)
+        1116: {
+          slidesPerView: 3,
+          spaceBetween: 15,
         },
-      });
-    </script>
-  </body>
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+      },
+    });
+
+    var customerReviewsSwiper = new Swiper(".customer_reviews_swiper", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true,
+      // loop: true,
+      pagination: {
+        el: ".customer_reviews_swiper .swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>
