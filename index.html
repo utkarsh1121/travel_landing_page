@@ -948,7 +948,8 @@
     var topTrendingSwiper = new Swiper(".toptrending_swiper", {
       slidesPerView: 4,
       spaceBetween: 30,
-      loop: true,
+      loop: false,
+      centeredSlides: false,
       pagination: {
         el: ".toptrending_swiper .swiper-pagination",
         clickable: true,
@@ -961,18 +962,24 @@
         // when window width is >= 480px
         320: {
           slidesPerView: 1,
+          spaceBetween: 15,
+        },
+
+        430: {
+          slidesPerView: 1.4,
           spaceBetween: 12,
+          centeredSlides: true,
         },
         // when window width is >= 768px (Tablet)
-        708: {
+        550: {
           slidesPerView: 2,
           spaceBetween: 15,
         },
 
-        868: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
+        // 844: {
+        //   slidesPerView: 3,
+        //   spaceBetween: 15,
+        // },
 
         // when window width is >= 1200px (Desktop)
         1116: {
