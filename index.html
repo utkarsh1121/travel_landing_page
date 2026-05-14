@@ -27,11 +27,10 @@
         </ul>
       </nav>
 
-      <nav class="  mobile-nav-links">
+      <nav class="mobile-nav-links">
         <div onclick="closeMenu()" class="mobile-nav-links_cross">
           x
-
-          </div>
+        </div>
         <ul>
           <li><a href="#">Destinations</a></li>
           <li><a href="#">Activities</a></li>
@@ -44,20 +43,23 @@
 
       <div onclick="toggleMenu()" class="hamburger-menu">=</div>
 
-      <script>
-        function toggleMenu() {
-          const cross = document.querySelector(".mobile-nav-links_cross");
-          const menu = document.querySelector(".mobile-nav-links");
-          // cross.classList.toggle("active");
-          menu.classList.toggle("active");
-        
-        }
-        function closeMenu() {
-          const menu = document.querySelector(".mobile-nav-links");
-          menu.classList.remove("active");
-        }
-      </script>
     </header>
+
+    <script>
+      function toggleMenu() {
+        const cross = document.querySelector(".mobile-nav-links_cross");
+        const menu = document.querySelector(".mobile-nav-links");
+        // cross.classList.toggle("active");
+        menu.classList.toggle("active");
+
+      }
+      function closeMenu() {
+        const menu = document.querySelector(".mobile-nav-links");
+        menu.classList.remove("active");
+      }
+
+    </script>
+
     <div class="hero-content">
       <div class="heroBanner">
         <img src="img/Section.png" alt="heroBanner" />
@@ -841,7 +843,7 @@
         <div class="footer_helpline">
           <h3>
             Speak to our expert at
-            <span style="color: #eb662b">1-800-453-6744</span>
+            <span style="color: #eb662b; white-space: nowrap;">1-800-453-6744</span>
           </h3>
           <p>Follow Us</p>
         </div>
@@ -926,11 +928,15 @@
       },
       breakpoints: {
         320: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 12,
         },
 
-        480: {
+        430: {
+          slidesPerView: 2,
+          spaceBetween: 12,
+        },
+        500: {
           slidesPerView: 3,
           spaceBetween: 12,
         },

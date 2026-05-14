@@ -20,6 +20,8 @@ body {
   --quinary-color: #f5f5f5;
   --senary-color: #000000; */
 
+  --hover-color: #f04d08;
+
   /* 1920 to 1200 18 to 15 px  */
   --font-size-body: clamp(0.9375rem, 0.625rem + 0.4167vw, 1.125rem);
   /* 64 px to 55 px 1920 to 1200px */
@@ -115,6 +117,13 @@ header {
   /* 1.5rem to 13 px 1024 to 768 px */
   padding: 10px clamp(0.8125rem, -1.25rem + 4.2969vw, 1.5rem);
   border-radius: 50px;
+}
+
+.nav-links ul li a.login-btn:hover {
+  background-color: var(--hover-color);
+  transition: all 0.3s ease;
+  color: #fff;
+  transform: scale(1.7);
 }
 
 .hero-content {
@@ -219,6 +228,13 @@ header {
   cursor: pointer;
 }
 
+.search-btn:hover {
+  background-color: var(--hover-color);
+  transition: all 0.3s ease;
+  color: #fff;
+  transform: scale(1.03);
+}
+
 .why-choose-us {
   background-color: white;
   color: #000;
@@ -247,6 +263,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
 }
 
 .feature-card p {
@@ -449,6 +470,8 @@ header {
 
 .destination-card {
   display: flex;
+  margin: 0 auto;
+  max-width: 12rem;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
@@ -741,7 +764,7 @@ header {
   height: 100% !important;
 }
 
-.toptrending_swiper{
+.toptrending_swiper {
   /* overflow: visible !important; */
 }
 
@@ -1084,17 +1107,15 @@ header {
   }
 
   .mobile-nav-links {
-    /* display: none; */
+    /* Override base .mobile-nav-links { display: none } so the panel can show */
+    display: flex;
+    flex-direction: column;
     position: fixed;
     color: #000000;
-    /* text-align: right; */
-    /* display: flex;
-    flex-direction: column; */
     border: 2px solid #f5f5f5;
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 1rem;
-    flex-direction: column;
     transition: all 0.9s ease;
     opacity: 0;
     width: 100vw;
@@ -1103,11 +1124,12 @@ header {
     transform: translateX(100%);
     right: 0;
     /* right: 1rem; */
-    z-index: 3;
-    /* z-index: 2; */
+    /* z-index: 999; */
+    z-index: 2;
     top: 0;
     /* top: 53px; */
   }
+
   .mobile-nav-links_cross {
     /* display: flex;
     justify-content: flex-end;
@@ -1135,7 +1157,7 @@ header {
     /* transition: all 0.9s ease ; */
     transition: all 1.5s ease;
     /* transition-delay: 2s; */
-    
+
     opacity: 0;
     transform: translateX(100%);
 
@@ -1151,24 +1173,24 @@ header {
   .mobile-nav-links.active ul li:nth-child(1) {
     transition-delay: 0.1s;
   }
-  
+
   .mobile-nav-links.active ul li:nth-child(2) {
     transition-delay: 0.2s;
   }
-  
+
   .mobile-nav-links.active ul li:nth-child(3) {
     transition-delay: 0.3s;
   }
-  
+
   .mobile-nav-links.active ul li:nth-child(4) {
     transition-delay: 0.4s;
   }
+
   .mobile-nav-links.active ul li:nth-child(5) {
     transition-delay: 0.4s;
   }
 
-  .mobile-nav-links ul li {
-  }
+  .mobile-nav-links ul li {}
 
   .mobile-nav-links ul li a {
     text-decoration: none;
@@ -1372,7 +1394,13 @@ header {
     margin: 0;
   }
 
+  .popular-things-to-do-card {
+    /* height: 100%; */
+    aspect-ratio: 1 / 1.1;
+  }
+
 }
+
 @media (max-width: 625px) {
   .popular-tours-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -1396,6 +1424,12 @@ header {
     /* margin-top: 2rem; */
     flex-direction: column;
   }
+
+  .popular-things-to-do-card {
+    /* height: 100%; */
+    aspect-ratio: 1 / 1;
+  }
+
 }
 
 /*  */
@@ -1427,8 +1461,8 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-top: 1rem;
-    grid-template-rows: repeat(3, minmax(clamp(14rem, 2.3333rem + 15.5556vw, 21rem), auto));
-    grid-auto-rows: minmax(50px, auto);
+    grid-template-rows: none;
+    /* grid-auto-rows: auto; */
     grid-template-areas:
       "box-1 box-2 "
       "box-3 box-4"
@@ -1437,7 +1471,7 @@ header {
 
   .popular-things-to-do-card .img {
     /* position: relative; */
-    aspect-ratio: 3 / 5;
+    /* aspect-ratio: 3 / 5; */
 
   }
 
@@ -1487,6 +1521,10 @@ header {
     row-gap: 15px;
   }
 
+  /* .slider-container {
+    margin: 0;
+  } */
+
   /* .footer_content {
     grid-template-columns: 1fr 1fr;
 
@@ -1518,6 +1556,7 @@ grid-template-areas:
     display: none !important;
   }
 
+
   .popular-things-to-do-cards {
     /* grid-auto-rows: minmax(50px, auto); */
   }
@@ -1526,7 +1565,7 @@ grid-template-areas:
 @media (max-width:375px) {
   .popular-things-to-do-card .img {
     /* position: relative; */
-    aspect-ratio: 3 / 6;
+    /* aspect-ratio: 3 / 6; */
 
   }
 
