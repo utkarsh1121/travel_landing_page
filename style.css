@@ -180,6 +180,42 @@ header {
   border-radius: 14px;
 }
 
+.hero_banner-search-form {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+.search-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-content input , .search-content select {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  /* border: 1px solid #101030; */
+}
+
+
+
+
+/* .search-select {
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  color: #000;
+  border: none;
+  outline: none;
+  border: 1px solid #ff0000;
+  position:absolute;
+} */
+
+
 .search-box {
   display: flex;
   align-items: center;
@@ -199,9 +235,9 @@ header {
   margin-right: clamp(0.625rem, -1.5568rem + 3.4091vw, 1rem);
 }
 
-.search-content {
+/* .search-content {
   gap: 0.5rem;
-}
+} */
 
 .search-content h3 {
   font-size: var(--font-size-body);
@@ -1089,6 +1125,13 @@ header {
 }
 
 @media (max-width: 768px) {
+
+  .hero_banner-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
   .why-choose-us-cards {
     /* display: flex; */
     /* margin-top: 3rem; */

@@ -73,38 +73,49 @@
             happy anytime, anywhere
           </p>
         </div>
+
+
+
         <div class="hero_banner-search">
-          <!-- <div class="search-container"> -->
+          <form class="hero_banner-search-form" action="">
+            <!-- <div class="search-container"> -->
 
-          <div class="search-box">
-            <div class="icon-box"></div>
+            <div class="search-box">
+              <div class="icon-box"></div>
 
-            <div class="search-content">
-              <h3>Where</h3>
-              <p>Search destinations</p>
+              <div class="search-content">
+                <label for="search-input">Where</label>
+                <input id="search-input" type="text" placeholder="Search destinations" class="search-input">
+              </div>
             </div>
-          </div>
 
-          <div class="search-box">
-            <div class="icon-box"></div>
+            <div class="search-box">
+              <div class="icon-box"></div>
 
-            <div class="search-content">
-              <h3>When</h3>
-              <p>February 05 ~ March 14</p>
+              <div class="search-content">
+                <label for="date-input">When</label>
+                <input id="date-input" type="date" placeholder="Select Date" class="search-input date-input">
+              </div>
             </div>
-          </div>
 
-          <div class="search-box">
-            <div class="icon-box"></div>
+            <div class="search-box">
+              <div class="icon-box"></div>
 
-            <div class="search-content">
-              <h3>Tour Type</h3>
-              <p>All tour</p>
+              <div class="search-content">
+                <label for="tour-type">Tour Type</label>
+                <select class="search-select" id="tour-type">
+                  <option value="all">All tour</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="beach">Beach</option>
+                  <option value="cultural">Cultural</option>
+                  <option value="family">Family</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <button class="search-btn">Search</button>
-
+            <button class="search-btn">Search</button>
+          </form>
           <!-- </div> -->
         </div>
       </div>
