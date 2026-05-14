@@ -166,3 +166,19 @@
     "message": "Data saved successfully!"
 }
 
+{
+    "destination": "Non aut quia digniss",
+    "travel_date": "2027-10-15",
+    "tour_type": "luxury",
+    "submitted_at": "2026-05-14 19:23:18pm",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Debitis rerum quibus",
+    "travel_date": "2026-10-23",
+    "tour_type": "luxury",
+    "submitted_at": "2026-05-14 19:26:44pm",
+    "message": "Data saved successfully!"
+}
+
