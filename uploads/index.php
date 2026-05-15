@@ -5,11 +5,37 @@ date_default_timezone_set('Asia/Kolkata');
 // echo $_POST['tour_type'];
 // print_r($_POST);
 
-
+$error = [];
 
 $destination = $_POST['destination'] ?? '';
 $travel_date = $_POST['travel_date'] ?? '';
 $tour_type = $_POST['tour_type'] ?? '';
+
+if (empty($destination)) {
+    $error[] = "Destination is required";
+}
+
+if (empty($travel_date)) {
+    $error[] = "Travel date is required";
+}
+
+if (empty($tour_type)) {
+    $error[] = "Tour type is required";
+}
+
+if (count($error) > 0) {
+    echo json_encode([
+        'status' => false,
+        'errors' => $error,
+    ], JSON_PRETTY_PRINT);
+    exit;
+} else {
+    echo json_encode([
+        'status' => true,
+        'message' => 'Data saved successfully!',
+    ], JSON_PRETTY_PRINT);
+    exit;
+}
 
 $suer_data = array(
   'destination' => htmlspecialchars($destination),
@@ -20,14 +46,18 @@ $suer_data = array(
 );
 
     foreach ($suer_data as $value) {
+        if (empty($destination)) {
+            echo "Destination is required";
+            exit;
+        }
     if ($value ==""){
     echo "All fields are required";
       exit;
     }
-    if($travel_date < date('Y-m-d') || $travel_date > date('Y-m-d', strtotime('+3 year'))){
-      echo "Travel date must be in the future or less than 3 years";
-      exit;
-    }
+    // if($travel_date < date('Y-m-d') || $travel_date > date('Y-m-d', strtotime('+3 year'))){
+    //   echo "Travel date must be in the future or less than 3 years";
+    //   exit;
+    // }
 }
 
 // echo file_put_contents("log.txt", "Entry logged");
@@ -44,4 +74,3 @@ header('Location: ../index.html?status=success');
 // exit;
 // echo $jsonData;
 // echo "Data saved successfully!";
-

@@ -79,49 +79,35 @@
 
             <div class="search-box">
               <div class="icon-box"></div>
-          
+
               <div class="search-content">
                 <label for="search-input">Where</label>
-          
-                <input
-                  id="search-input"
-                  type="text"
-                  name="destination"
-                  placeholder="Search destinations"
-                  class="search-input"
-                  required
-                >
+
+                <input id="search-input" type="text" name="destination" class="search-input destination-input"
+                  onclick="" placeholder="Search destinations">
+                <div class="city_list_container">
+                  <ul class="city_list" id="city-list"></ul>
+                </div>
               </div>
             </div>
-          
+
             <div class="search-box">
               <div class="icon-box"></div>
-          
+
               <div class="search-content">
                 <label for="date-input">When</label>
-          
-                <input
-                  id="date-input"
-                  type="date"
-                  name="travel_date"
-                  class="search-input date-input"
-                  required
-                >
+
+                <input id="date-input" type="date" name="travel_date" class="search-input date-input" required>
               </div>
             </div>
-          
+
             <div class="search-box">
               <div class="icon-box"></div>
-          
+
               <div class="search-content">
                 <label for="tour-type">Tour Type</label>
-          
-                <select
-                  class="search-select"
-                  id="tour-type"
-                  name="tour_type"
-                  required
-                >
+
+                <select class="search-select" id="tour-type" name="tour_type" required>
                   <option value="all">All tour</option>
                   <option value="adventure">Adventure</option>
                   <option value="beach">Beach</option>
@@ -131,12 +117,12 @@
                 </select>
               </div>
             </div>
-          
+
             <button type="submit" class="search-btn">
               Submit
             </button>
-          
-          </form>          <!-- </div> -->
+
+          </form> <!-- </div> -->
         </div>
       </div>
     </div>
@@ -934,9 +920,7 @@
               <input type="email" placeholder="Your email address" />
               <button type="submit">Send</button>
             </form>
-
           </div>
-
         </div>
       </div>
     </div>

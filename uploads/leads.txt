@@ -27,7 +27,7 @@
     "travel_date": "1975-02-20",
     "tour_type": "adventure",
     "submitted_at": "2026-05-14 17:56:50pm",
-    "message": "Data saved successfully!"
+    "message": "Data saved !"
 }
 
 {
@@ -179,6 +179,62 @@
     "travel_date": "2026-10-23",
     "tour_type": "luxury",
     "submitted_at": "2026-05-14 19:26:44pm",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Quidem a ut quia ver",
+    "travel_date": "2026-07-03",
+    "tour_type": "luxury",
+    "submitted_at": "2026-05-15 11:36:20am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Ea rem mollit quod a",
+    "travel_date": "2017-04-17",
+    "tour_type": "adventure",
+    "submitted_at": "2026-05-15 11:38:30am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Officia reprehenderi",
+    "travel_date": "2000-03-15",
+    "tour_type": "luxury",
+    "submitted_at": "2026-05-15 11:41:57am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Quaerat necessitatib",
+    "travel_date": "1977-01-12",
+    "tour_type": "luxury",
+    "submitted_at": "2026-05-15 11:42:07am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Sit ut architecto o",
+    "travel_date": "1992-08-19",
+    "tour_type": "cultural",
+    "submitted_at": "2026-05-15 11:48:14am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Laboris blanditiis e",
+    "travel_date": "1980-04-13",
+    "tour_type": "cultural",
+    "submitted_at": "2026-05-15 11:49:51am",
+    "message": "Data saved successfully!"
+}
+
+{
+    "destination": "Ea tempora quis nemo",
+    "travel_date": "2014-06-18",
+    "tour_type": "all",
+    "submitted_at": "2026-05-15 11:50:00am",
     "message": "Data saved successfully!"
 }
 
